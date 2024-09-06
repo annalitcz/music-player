@@ -14,7 +14,7 @@ const MusicPlayer = ({ song, onNextSong, onPrevSong }) => {
 
   return (
     <div className="w-full max-w-4xl mx-auto bg-white border rounded-md shadow-md p-4">
-      <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+      <h2 className="text-xl font-semibold text-gray-800 mb-3 text-center">
         🎶 Now Playing: {song.title} 🎶
       </h2>
       <AudioPlayer

@@ -20,10 +20,10 @@ const CombinedPlayer = ({
 
   return (
     <div className="flex flex-col items-center w-full max-w-4xl mx-auto bg-white p-5 rounded-md shadow-lg">
-      <div className="flex flex-col w-full gap-4 mb-10">
+      <div className="flex flex-col w-full gap-4">
         {/* Playlist */}
         <div className="w-full max-h-[calc(100vh-300px)] overflow-y-auto p-4 bg-white border rounded-md shadow-md">
-          <h3 className="text-xl font-semibold text-gray-800 mb-5 text-center">
+          <h3 className="text-xl font-semibold text-gray-800 text-center">
             🎵 Song List 🎵
           </h3>
           <table className="w-full text-left border-collapse">
@@ -34,8 +34,8 @@ const CombinedPlayer = ({
                   onClick={() => onSelectSong(index)}
                   className={`cursor-pointer transition-colors duration-300 ${
                     currentSongIndex === index
-                      ? "bg-blue-600 text-white"
-                      : "hover:bg-gray-100 text-blue-600"
+                      ? "bg-blue-600 text-white rounded-md"
+                      : "hover:bg-gray-100 text-blue-600 rounded"
                   }`}
                 >
                   <td className="p-3">{song.title}</td>
