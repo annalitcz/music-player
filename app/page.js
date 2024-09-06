@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import MusicPlayer from '../components/MusicPlayer';
 import Playlist from '../components/Playlist';
-import musicFiles from '../assets/music';
+import musicFiles from '../public/music';
 
 export default function Home() {
   const playlist = [
