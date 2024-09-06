@@ -1,6 +1,6 @@
 'use client';
 import Head from 'next/head';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CombinedPlayer from '../components/CombinedPlayer';
 import musicFiles from '../public/music';
 
@@ -17,6 +17,10 @@ export default function Home() {
   ];
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
+
+  useEffect(()=>{
+    document.title = 'Music Player'
+  },[])
 
   // Function to play the next song in the playlist
   const handleNextSong = () => {
