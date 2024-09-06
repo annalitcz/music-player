@@ -3,7 +3,10 @@ import React from 'react';
 const Playlist = ({ playlist, currentSongIndex, onSelectSong }) => {
   return (
     <div className="mb-10">
-      <div className="w-72 max-h-[calc(100vh-200px)] mx-auto overflow-y-auto p-4 border rounded-md bg-white">
+      <h3 className="text-xl font-semibold text-white mb-5 text-center text-shadow-md">
+        🎵 Song List 🎵
+      </h3>
+      <div className="w-full max-h-[calc(100vh-200px)] mx-auto overflow-y-auto p-4 border rounded-md bg-white">
         <table className="w-full text-left border-collapse">
           <tbody>
             {playlist.map((song, index) => (

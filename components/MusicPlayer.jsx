@@ -13,9 +13,9 @@ const MusicPlayer = ({ song, onNextSong, onPrevSong }) => {
   }, [song]); // Re-run whenever the song changes
 
   return (
-    <div className="w-full max-w-3xl mx-auto bg-white rounded-2xl p-6 shadow-lg text-center my-10">
-      <h2 className="text-lg font-bold text-gray-800 mb-4 font-poppins overflow-hidden whitespace-nowrap">
-        <span className="animate-marquee">Now Playing: {song.title} 🎶</span>
+    <div className="w-full max-w-4xl mx-auto bg-white border rounded-md shadow-md p-4">
+      <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">
+        🎶 Now Playing: {song.title} 🎶
       </h2>
       <AudioPlayer
         ref={player}
@@ -27,20 +27,6 @@ const MusicPlayer = ({ song, onNextSong, onPrevSong }) => {
         onClickPrevious={onPrevSong}
         className="w-full"
       />
-      <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(100%); }
-          100% { transform: translateX(-100%); }
-        }
-
-        .animate-marquee {
-          display: inline-block;
-          white-space: nowrap;
-          overflow: hidden;
-          box-sizing: border-box;
-          animation: marquee 10s linear infinite;
-        }
-      `}</style>
     </div>
   );
 };

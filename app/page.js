@@ -1,8 +1,7 @@
 'use client';
 import Head from 'next/head';
 import { useState } from 'react';
-import MusicPlayer from '../components/MusicPlayer';
-import Playlist from '../components/Playlist';
+import CombinedPlayer from '../components/CombinedPlayer';
 import musicFiles from '../public/music';
 
 export default function Home() {
@@ -32,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-400 to-orange-200 p-5">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-400 to-blue-600 p-5">
       <Head>
         <title>Music Player with Playlist</title>
         <meta name="description" content="A simple music player with playlist built with Next.js" />
@@ -40,27 +39,15 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
 
-      <main className="flex flex-col items-center">
-        <h1 className="text-4xl font-semibold text-white mb-10 text-center shadow-lg">
-          Music Playlist
-        </h1>
-
-        {/* Container untuk Playlist dan MusicPlayer */}
-        <div className="flex justify-between gap-10 w-90">
-          {/* Playlist component */}
-          <Playlist
-            playlist={playlist}
-            currentSongIndex={currentSongIndex}
-            onSelectSong={setCurrentSongIndex}
-          />
-
-          {/* Music Player */}
-          <MusicPlayer
-            song={playlist[currentSongIndex]}
-            onNextSong={handleNextSong}
-            onPrevSong={handlePrevSong}
-          />
-        </div>
+      <main className="flex flex-col items-center w-full max-w-4xl">
+        {/* CombinedPlayer component */}
+        <CombinedPlayer
+          playlist={playlist}
+          currentSongIndex={currentSongIndex}
+          onSelectSong={setCurrentSongIndex}
+          onNextSong={handleNextSong}
+          onPrevSong={handlePrevSong}
+        />
       </main>
     </div>
   );
