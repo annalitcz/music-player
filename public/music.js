@@ -1,7 +1,7 @@
 // assets/music/music.js
 
 const musicFiles = {
-    reckless: '/music/reckless.mp3',
+    reckless: './music/Reckless.mp3',
     eightLetters: '/music/8-letters.mp3',
     wedonttalkanymore: '/music/We Dont Talk Anymore.mp3',
     drunktxt: './music/Drunk Text.mp3',
