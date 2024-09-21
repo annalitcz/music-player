@@ -12,8 +12,10 @@ export default function Home() {
     { title: 'Drunk Text', src: musicFiles.drunktxt },
     { title: 'Hurts So Good', src: musicFiles.hurtssogood },
     { title: 'Shameless', src: musicFiles.shameless },
-    { title: 'Side To Side', src: musicFiles.sidetoside},
-    { title: 'Alibi', src: musicFiles.alibi},
+    { title: 'People', src: musicFiles.people},
+    { title: 'Mary On A Cross', src: musicFiles.marionacross},
+    { title: 'Rewrite The Stars', src: musicFiles.rewritethestar},
+    { title: 'Fireflies', src: musicFiles.fireflies},
   ];
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);

@@ -8,8 +8,9 @@ const musicFiles = {
     hurtssogood: './music/Hurts So Good.mp3',
     people: './music/People.mp3',
     shameless: './music/Shameless.mp3',
-    sidetoside: './music/Side To Side.mp3',
-    alibi: './music/Alibi.mp3'
+    marionacross: './music/MARY ON A CROSS-GHOST   Audio Edit - Therplane Musique.m4a',
+    rewritethestar: './music/Rewrite The Stars - Anne Marie   James Arthur (sped up) - Sk.m4a',
+    fireflies: './music/Owl City - Fireflies (Speedup) Tiktok Version.mp3'
   };
   
   export default musicFiles;
